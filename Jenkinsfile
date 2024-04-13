@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'dotnet build src/MFETaskBackend/MFETaskBackend.csproj --configuration Release'
+                sh 'dotnet build MFETaskBackend/MFETaskBackend.csproj --configuration Release'
             }
         }
 
